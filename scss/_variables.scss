@@ -1,0 +1,45 @@
+$headerHeight:82px;
+$headerMobHeight:54px;
+$gnbColor1: rgba(255,255,255,.6);
+$gnbColor2: rgba(255,255,255,.8);
+$mainColor: #05d685;
+$svgImg : url(https://static-clova.pstatic.net/static/57794fa/img/sprite/sp_svg_icon.svg);
+$svgImgSize : 418px 372px;
+$mobSvgImg : url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_svg_icon.svg);
+$mobSvgImgSize : 383px 329px;
+$mobSlideTxtFz27 : 27px;
+$mobSlideTxtFz14 : 14px;
+$mobContTxtFz15 : 15px;
+$mobTxtSvgImg :url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png);
+$mobTxtSvgImgSize : 294px 180px;
+
+
+@mixin svgImg-size-pos($x, $y) {
+  background: $svgImg;
+  background-size: $svgImgSize;
+  background-position: $x+px $y+px;
+}
+@mixin svgImg-size() {
+  background: $svgImg;
+  background-size: $svgImgSize;
+}
+
+@mixin mob-svgImg-size-pos($x, $y) {
+  background: $mobSvgImg;
+  background-size: $mobSvgImgSize;
+  background-position: $x+px $y+px;
+}
+@mixin mob-svgImg-size() {
+  background: $mobSvgImg;
+  background-size: $mobSvgImgSize;
+}
+
+@mixin mob-txtSvgImg-size-pos($x, $y) {
+  background: $mobTxtSvgImg;
+  background-size: $mobTxtSvgImgSize;
+  background-position: $x+px $y+px;
+}
+@mixin mob-txtSvgImg-size() {
+  background: $mobTxtSvgImg;
+  background-size: $mobTxtSvgImgSize;
+}

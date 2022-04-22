@@ -1,0 +1,99 @@
+@import "../variables";
+@import "../animations/animation";
+#cont2 {
+  background: #f8fafc;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .title {
+    margin-right: 100px;
+    h2 {
+      width: 261px;
+      height: 88px;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      margin-top: 24px;
+      line-height: 1.8;
+      font-size: 19px;
+      letter-spacing: -0.8px;
+      &.mob-txt {
+        display: none;
+      }
+    }
+  }
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    .item {
+      width: 380px;
+      height: 457px;
+      border: 1px solid #eff3f7;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 58px 50px 58px 58px;
+      margin: 0 15px;
+      transform-style: preserve-3d;
+      transition: transform 0.2s linear, box-shadow 0.2s linear;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      &-img-bg {
+        width: 76px;
+        height: 90px;
+        @include svgImg-size;
+      }
+      &-title {
+        margin: 36px 0 16px;
+        width: 100%;
+        display: inline-block;
+        &::before {
+          content: '';
+          display: block;
+          height: 26px;
+        }
+      }
+
+      &-desc {
+        line-height: 2;
+        font-size: 17px;
+        letter-spacing: -0.6px;
+        &.mob-txt {
+          display: none;
+        }
+      }
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .item1 {
+      .item-img-bg {
+        background-position: -4px 94px;
+      }
+      .item-title {
+        &::before {
+          background: url(../img/text_img_07.png) no-repeat;
+          background-size: 227px auto;
+        }
+      }
+    }
+    .item2 {
+      .item-img-bg {
+        background-position: -102px 190px;
+      }
+      .item-title {
+        &::before {
+          background: url(../img/text_img_08.png) no-repeat;
+          background-size: 224px auto;
+        }
+      }
+    }
+  }
+}

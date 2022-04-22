@@ -1,0 +1,56 @@
+@import "../variables";
+
+#banner {
+  height: 100vw ;
+  .container{
+    .slide-view{
+      .slide-wrap{
+        .slide{
+          video{
+           display: none;
+          }
+          .bg-img{
+           display: none;
+          }
+          .mob-bg-img{
+            display: block;
+          }
+          .slide-desc{
+            .txt{
+              strong{
+                font-size: $mobSlideTxtFz27;
+                &.mob-txt{
+                  display: inline-block;
+                }
+              }
+              span{
+                font-size: 19px;
+              }
+              img{
+                &.mob-img {
+                  width: 281px;
+                  height: 25px;
+                  display: block;
+                }
+              }
+            }
+            .detail-box{
+              .detail-btn{
+                padding: 14px 26px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        
+      }
+      .swiper-pagination{
+        bottom: 20px;
+        .swiper-pagination-bullet{
+          width: 30px;
+        }
+      }
+    }
+  }
+  
+}

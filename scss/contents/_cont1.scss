@@ -1,0 +1,124 @@
+@import "../variables";
+@import "../animations/animation";
+
+#cont1 {
+  .title {
+    text-align: center;
+    h2 {
+      display: inline-block;
+      img {
+        width: 166px;
+        height: 32px;
+      }
+    }
+    p {
+      font-size: 19px;
+      line-height: 1.8;
+      padding: 16px 0 0;
+      letter-spacing: -0.6px;
+    }
+  }
+  .item-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 80px;
+    .item {
+      text-align: center;
+      margin: 0 40px;
+      .item-img-bg {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        @include svgImg-size;
+      }
+      .item-title {
+        margin: 30px 0 10px;
+        &::before {
+          content: '';
+          display: inline-block;
+          height: 28px;
+        }
+      }
+      .item-desc {
+        line-height: 1.6;
+        font-size: 17px;
+        letter-spacing: -0.6px;
+        &.mob-txt {
+          display: none;
+          padding-top: 10px;
+        }
+      }
+    }
+    .item1 {
+      &:hover {
+        .item-img-bg {
+          animation: bgHover1 0.6s cubic-bezier(0.175, 0.885, 0.32, 3);
+        }
+      }
+      .item-img-bg {
+        background-position: -185px 94px;
+      }
+      .item-title {
+        &::before {
+          width: 190px;
+          background: url(../img/text_img_02.png);
+          background-size: cover;
+        }
+      }
+    }
+    .item2 {
+      &:hover {
+        .item-img-bg {
+          animation: bgHover2 0.6s cubic-bezier(0.175, 0.885, 0.32, 3);
+        }
+      }
+      .item-img-bg {
+        background-position: -90px 94px;
+      }
+      .item-title {
+        &::before {
+          width: 100px;
+          background: url(../img/text_img_03.png);
+          background-size: cover;
+        }
+      }
+    }
+    .item3 {
+      &:hover {
+        .item-img-bg {
+          animation: bgHover3 3s linear;
+        }
+      }
+      .item-img-bg {
+        background-position: 135px 94px;
+      }
+      .item-title {
+        &::before {
+          width: 97px;
+          background: url(../img/text_img_04.png);
+          background-size: cover;
+        }
+      }
+    }
+    .item4 {
+      &:hover {
+        .item-img-bg {
+          animation: bgHover4 0.5s linear 2 forwards;
+        }
+      }
+      .item-img-bg {
+        background-position: -4px 190px;
+      }
+      .item-title {
+        &::before {
+          width: 114px;
+          background: url(../img/text_img_05.png);
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

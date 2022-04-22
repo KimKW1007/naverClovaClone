@@ -1,0 +1,31 @@
+@import "./variables";
+
+@media (max-width:1236px) {
+  @import "./response1236/res-cont2";
+}
+
+@media (max-width:1200px) {
+  .web-txt,.web-img, .web{display: none !important;}
+  #wrap {
+    @import "./response1200/res-header";
+
+    // header 
+    @import "./response1200/res-banner";
+
+    //banner
+  
+    #contents {
+      .section {
+        padding: 90px 20px;
+      }
+      @import "./response1200/res-cont1";
+      @import "./response1200/res-cont2";
+      @import "./response1200/res-cont3";
+      @import "./response1200/res-cont4";
+      @import "./response1200/res-cont5";
+    }
+    //contents
+    @import "./response1200/res-footer";
+    //footer
+  }
+}

@@ -1,0 +1,25 @@
+@import './variables';
+
+#wrap {
+  width: 100%;
+  @import './contents/header';
+  // header
+
+  @import './contents/banner';
+  // banner
+
+  #contents {
+    width: 100%;
+    @import './contents/contCommon';
+    @import './contents/cont1';
+    @import './contents/cont2';
+    @import './contents/cont3';
+    @import './contents/cont4';
+    @import './contents/cont5';
+
+  }
+  // contents
+  @import './contents/footer';
+
+  // footer
+}

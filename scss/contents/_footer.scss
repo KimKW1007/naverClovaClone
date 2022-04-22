@@ -1,0 +1,183 @@
+@import "../variables";
+@import "../animations/animation";
+#footer {
+  width: 100%;
+  background: #1a1a1a;
+  color: #8b8b8b;
+  font-size: 13px;
+  .container {
+    width: 100%;
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 40px 0;
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        display: inline-block;
+        a {
+          display: block;
+          width: 160px;
+          height: 24px;
+          &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            @include svgImg-size-pos(-4, -90);
+          }
+        }
+      }
+      .item-list {
+        display: flex;
+        .item {
+          width: 24px;
+          height: 24px;
+          a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &::before {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 100%;
+              @include svgImg-size;
+            }
+          }
+          + li {
+            margin-left: 15px;
+          }
+        }
+        .item1 {
+          a {
+            &::before {
+              background-position: 34px -182px;
+            }
+            &:hover::before {
+              background-position: 72px -230px;
+            }
+          }
+        }
+        .item2 {
+          a {
+            &::before {
+              background-position: 66px -182px;
+            }
+            &:hover::before {
+              background-position: 232px -230px;
+            }
+          }
+        }
+        .item3 {
+          a {
+            &::before {
+              background-position: 136px -230px;
+            }
+            &:hover::before {
+              background-position: 104px -230px;
+            }
+          }
+        }
+        .item4 {
+          a {
+            &::before {
+              background-position: 40px -230px;
+            }
+            &:hover::before {
+              background-position: 168px -230px;
+            }
+          }
+        }
+      }
+      .cs-desc {
+        display: flex;
+        li {
+          position: relative;
+          display: inline-block;
+          padding: 0 10px;
+          a {
+            color: inherit;
+          }
+          &:first-child {
+            padding: 0 15px 0 0;
+          }
+          + li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 80%;
+            background: #424242;
+          }
+        }
+      }
+      .powered-by {
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+        }
+        &-txt {
+          letter-spacing: -0.2px;
+        }
+        &-naver {
+          width: 50px;
+          height: 18px;
+          @include svgImg-size;
+          margin-top: 2px;
+          margin-left: 3px;
+          background-position: 78px -49px;
+        }
+        &-line {
+          width: 33px;
+          height: 18px;
+          @include svgImg-size;
+          margin-top: 2px;
+          background-position: 44px -92px;
+        }
+        i {
+          display: inline-block;
+          width: 2px;
+          height: 2px;
+          border-radius: 50%;
+          background: #797979;
+          margin: 0 8px;
+        }
+      }
+    }
+    
+    .footer-menu {
+      display: flex;
+      padding: 40px 0 16px;
+      li {
+        position: relative;
+        display: inline-block;
+        padding: 0 15px;
+        a {
+          color: inherit;
+          &:hover {
+            color: #fff;
+          }
+        }
+        &:not(:last-child)::before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 80%;
+          background: #424242;
+        }
+        &:first-child {
+          padding: 0 15px 0 0;
+        }
+      }
+    }
+  }
+}

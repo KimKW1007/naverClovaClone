@@ -1,0 +1,41 @@
+@keyframes bgHover1 {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes bgHover2 {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes bgHover3 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bgHover4 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

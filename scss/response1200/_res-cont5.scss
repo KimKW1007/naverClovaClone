@@ -1,0 +1,12 @@
+@import "../variables";
+
+#cont5{
+  padding: 0;
+  .container{
+    max-width: 100%;
+    margin: 0;
+    .item-list.mob{
+      display: block;
+    }
+  }
+}

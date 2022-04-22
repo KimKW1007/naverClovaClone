@@ -1,0 +1,11 @@
+@import "../variables";
+#cont3{
+  .container{
+    .item-list.web{
+      display: none;
+    }
+    .item-list.mob{
+      display: block;
+    }
+  }
+}

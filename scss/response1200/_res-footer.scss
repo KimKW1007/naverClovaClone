@@ -1,0 +1,131 @@
+@import "../variables";
+
+#footer {
+  color: #666;
+  font-size: 10px;
+  .container{
+    .footer-info{
+      justify-content: center;
+      .logo{
+        display: inline-block;
+        a{
+          width: 120px;
+          height: 11px;
+          &:before{
+            @include mob-svgImg-size-pos(-137, -185);
+          }
+        }
+      }
+      .item-list{
+        display: inline-flex;
+        .item{
+          width: 18px;
+          height: 15px;
+          margin-left: 15px;
+          a{
+            &::before{
+              @include mob-svgImg-size;
+            }
+          }
+          
+        }
+        .item1{
+          a{
+            &::before{
+              background-position: 144px 174px;
+            }
+            &:hover::before {
+              background-position: 144px 174px;
+            }
+          }
+        }
+        .item2{
+          a{
+            &::before{
+              background-position: 20px 97px;
+            }
+            &:hover::before {
+              background-position: 20px 97px;
+            }
+          }
+        }
+        .item3{
+          a{
+            &::before{
+              background-position: -72px 19px;
+            }
+            &:hover::before {
+              background-position: -72px 19px;
+            }
+          }
+        }
+        .item4{
+          a{
+            &::before{
+              background-position: 170px 174px;
+            }
+            &:hover::before {
+              background-position: 170px 174px;
+            }
+          }
+        }
+      }
+      &.mob-footer-info{
+        display: block;
+        .cs-desc{
+          display: flex;
+          justify-content: center;
+          li{
+            position: relative;
+            display: inline-block;
+            padding: 0 6px;
+            a{
+              color: inherit;
+            }
+            &:first-child{
+              padding: 0 6px 0 0;
+            }
+            +li::before{
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 1px;
+              height: 80%;
+              background: #424242;
+            }
+          }
+        }
+      }
+      
+      
+      .powered-by{
+        justify-content: center;
+        span{
+          padding: 10px 0 0;
+        }
+        &-naver{
+          display: none !important;
+        }
+        &-line{
+          display: none !important;
+        }
+        i{
+          display: none !important;
+        }
+      }
+    }
+    .footer-menu{
+      justify-content: center;
+      padding: 20px 0 10px;
+      li{
+        padding: 0 6px;
+        &:first-child{
+          padding: 0 6px 0 0;
+        }
+      }
+    }
+  }
+}
+

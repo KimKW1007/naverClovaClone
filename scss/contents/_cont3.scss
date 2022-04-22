@@ -1,0 +1,172 @@
+@import "../variables";
+@import "../animations/animation";
+#cont3 {
+  padding: 0;
+  .container {
+    .item-list.web {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      height: 370px;
+      .item {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        .item-inner {
+          position: absolute;
+          z-index: 2;
+          color: #fff;
+          .item-title {
+            &::before {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 36px;
+              @include svgImg-size;
+            }
+          }
+          .item-desc {
+            font-size: 19px;
+            line-height: 1.7;
+            padding: 20px 0 80px;
+            letter-spacing: -0.4px;
+          }
+          .detail-box {
+            display: inline-block;
+            .detail-btn {
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              color: #fff;
+              &::after {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 12px;
+                @include svgImg-size;
+                margin-left: 7px;
+                margin-top: -2px;
+                background-position: 127px -124px;
+              }
+            }
+          }
+        }
+      }
+      .item1 {
+        background: linear-gradient(0.25turn, #20aff1, #18be8a);
+        &::before {
+          content: '';
+          position: relative;
+          z-index: 1;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(https://static-clova.pstatic.net/static/1f2c7ac/img/main/banner_blog_pattern.png) no-repeat center center;
+          background-size: cover;
+        }
+        .item-inner {
+          left: 37%;
+          top: 22%;
+          .item-title {
+            width: 328px;
+            &:before {
+              content: '';
+              display: block;
+              width: 100%;
+              background-position: -4px -47px;
+              background-size: 126% auto;
+            }
+          }
+        }
+      }
+      .item2 {
+        background: #191919;
+        &::before {
+          content: '';
+          position: relative;
+          z-index: 1;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(https://static-clova.pstatic.net/static/69898d9/img/main/banner_ceb_pattern.png) no-repeat center center;
+          background-size: cover;
+        }
+        .item-inner {
+          left: 10%;
+          top: 22%;
+          .item-title {
+            width: 410px;
+            &:before {
+              content: '';
+              display: block;
+              width: 100%;
+              background-position: -4px -3px;
+              background-size: 100% auto;
+            }
+          }
+        }
+      }
+      
+    }
+    .item-list.mob {
+      display: none;
+      .item{
+        padding: 60px 0 40px 40px;
+        color: #fff;
+        &-title{
+          &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            @include mob-svgImg-size();
+          }
+        }
+        &-desc{
+          padding-top: 20px;
+          line-height: 1.3;
+          letter-spacing: -0.4px;
+        }
+        .detail-box{
+          margin-top: 90px;
+          .detail-btn{
+            color: inherit;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            &::after{
+              content: '';
+              display: block;
+              width: 7px;
+              height: 12px;
+              margin-left: 8px;
+              margin-top: -3px;
+              @include mob-svgImg-size-pos(76, 118);
+            }
+          }
+        }
+      }
+      .item1{
+        background: url(https://static-clova.pstatic.net/static/69898d9/m/img/main/bg_banner_blog.png) no-repeat 50% 0%;
+        background-size: cover;
+        .item-title{
+          width: 241px;
+          height: 27px;
+          &::before{
+            background-position: -4px -78px;
+          }
+        }
+      }
+      .item2{
+        background: #191919 url(https://static-clova.pstatic.net/static/69898d9/m/img/main/bg_banner_ceb.png) no-repeat 100% 0%;
+        background-size: contain;
+        .item-title{
+          width: 295px;
+          height: 27px;
+          &::before{
+            background-position: -4px -4px;
+          }
+        }
+      }
+    }
+  }
+}

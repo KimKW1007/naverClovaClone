@@ -1,0 +1,39 @@
+@import "../variables";
+
+#wrap{
+  #contents{
+    #cont2{
+      .container{
+        display: block;
+        .title{
+          margin-right: 0;
+          margin-bottom: 60px;
+          h2{
+            margin: 0 auto;
+            width: 294px;
+            height: 26px;
+            &:before{
+              content: '';
+              display: block;
+              width: 100%;
+              height: 100%;
+              @include mob-txtSvgImg-size-pos(0, 1);
+            }
+            img{
+              display: none;
+            }
+          }
+          p{
+            text-align: center;
+            &.web-txt{
+              display: none;
+            }
+            &.mob-txt {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

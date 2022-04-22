@@ -1,0 +1,66 @@
+@import "../variables";
+
+#cont2{
+  .container{
+    .title{
+      margin-bottom: 0;
+      p{
+        font-size: $mobContTxtFz15;
+      }
+    }
+    .item-list{
+      display: block;
+      .item{
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
+        &-img-bg{
+          width: 72px;
+          height: 72px;
+          margin: 0 auto;
+          @include mob-svgImg-size;
+        }
+        &-title{
+          width: 157px;
+          height: 16px;
+          display: block;
+          margin: 22px auto 18px;
+          &::before{
+            width: 100%;
+            height: 100%;
+            @include mob-txtSvgImg-size();
+          }
+          
+        }
+        &-desc{
+          font-size: 13px;
+          text-align: center;
+          &.mob-txt {
+            display: block;
+          }
+        }
+      }
+      .item1{
+        .item-img-bg{
+          background-position: 76px -84px;
+        }
+        .item-title{
+          &::before{
+            background-position: 0px 34px;
+          }
+        }
+      }
+      .item2{
+        .item-img-bg{
+          background-position: 76px -4px;
+        }
+        .item-title{
+          &::before{
+            background-position: 0px 52px;
+          }
+        }
+      }
+    }
+  }
+ 
+}
