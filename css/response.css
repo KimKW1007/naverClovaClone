@@ -1,7 +1,7 @@
 @media (max-width: 1236px) { #wrap #contents #cont2 .container { display: block; }
   #wrap #contents #cont2 .container .title { margin-right: 0; margin-bottom: 60px; }
   #wrap #contents #cont2 .container .title h2 { margin: 0 auto; width: 294px; height: 26px; }
-  #wrap #contents #cont2 .container .title h2:before { content: ''; display: block; width: 100%; height: 100%; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png); background-size: 294px 180px; background-position: 0px 1px; }
+  #wrap #contents #cont2 .container .title h2:before { content: ''; display: block; width: 100%; height: 100%; background: url(../img/sp_main.png); background-size: 294px 180px; background-position: 0px 1px; }
   #wrap #contents #cont2 .container .title h2 img { display: none; }
   #wrap #contents #cont2 .container .title p { text-align: center; }
   #wrap #contents #cont2 .container .title p.web-txt { display: none; }
@@ -35,14 +35,14 @@
   #wrap #banner .container .slide-view .swiper-pagination .swiper-pagination-bullet { width: 30px; }
   #wrap #contents .section { padding: 90px 20px; }
   #wrap #contents #cont1 .title h2 { display: inline-block; }
-  #wrap #contents #cont1 .title h2::before { content: ''; display: block; width: 113px; height: 20px; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png); background-size: 294px 180px; background-position: 0px -1px; }
+  #wrap #contents #cont1 .title h2::before { content: ''; display: block; width: 113px; height: 20px; background: url(../img/sp_main.png); background-size: 294px 180px; background-position: 0px -1px; }
   #wrap #contents #cont1 .title h2 img { display: none; }
   #wrap #contents #cont1 .title p { font-size: 15px; }
   #wrap #contents #cont1 .item-list { display: block; }
   #wrap #contents #cont1 .item-list .item { text-align: left; margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 30px 16px; }
   #wrap #contents #cont1 .item-list .item .item-img-bg { width: 70px; height: 70px; margin: 0; margin-right: 30px; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_svg_icon.svg); background-size: 383px 329px; }
   #wrap #contents #cont1 .item-list .item .item-title { margin: 0; }
-  #wrap #contents #cont1 .item-list .item .item-title::before { content: ''; display: inline-block; height: 16px; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png); background-size: 294px 180px; }
+  #wrap #contents #cont1 .item-list .item .item-title::before { content: ''; display: inline-block; height: 16px; background: url(../img/sp_main.png); background-size: 294px 180px; }
   #wrap #contents #cont1 .item-list .item .item-desc { font-size: 14px; }
   #wrap #contents #cont1 .item-list .item .item-desc.mob-txt { display: block; }
   #wrap #contents #cont1 .item-list .item + li { border-top: 1px solid rgba(0, 0, 0, 0.1); }
@@ -60,7 +60,7 @@
   #wrap #contents #cont2 .container .item-list .item { width: 100%; height: auto; margin: 40px 0; }
   #wrap #contents #cont2 .container .item-list .item-img-bg { width: 72px; height: 72px; margin: 0 auto; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_svg_icon.svg); background-size: 383px 329px; }
   #wrap #contents #cont2 .container .item-list .item-title { width: 157px; height: 16px; display: block; margin: 22px auto 18px; }
-  #wrap #contents #cont2 .container .item-list .item-title::before { width: 100%; height: 100%; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png); background-size: 294px 180px; }
+  #wrap #contents #cont2 .container .item-list .item-title::before { width: 100%; height: 100%; background: url(../img/sp_main.png); background-size: 294px 180px; }
   #wrap #contents #cont2 .container .item-list .item-desc { font-size: 13px; text-align: center; }
   #wrap #contents #cont2 .container .item-list .item-desc.mob-txt { display: block; }
   #wrap #contents #cont2 .container .item-list .item1 .item-img-bg { background-position: 76px -84px; }
@@ -70,7 +70,7 @@
   #wrap #contents #cont3 .container .item-list.web { display: none; }
   #wrap #contents #cont3 .container .item-list.mob { display: block; }
   #wrap #contents #cont4 .title h2 { display: inline-block; width: 140px; height: 21px; }
-  #wrap #contents #cont4 .title h2::before { content: ''; display: block; width: 100%; height: 100%; background: url(https://static-clova.pstatic.net/static/69898d9/m/img/sprite/sp_main.png); background-size: 294px 180px; background-position: 0px 76px; }
+  #wrap #contents #cont4 .title h2::before { content: ''; display: block; width: 100%; height: 100%; background: url(../img/sp_main.png); background-size: 294px 180px; background-position: 0px 76px; }
   #wrap #contents #cont4 .title h2 img { display: none; }
   #wrap #contents #cont4 .title p { font-size: 15px; line-height: 1.8; }
   #wrap #contents #cont4 .title p.mob-txt { display: block; }
