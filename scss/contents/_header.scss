@@ -16,7 +16,7 @@
         h1 {
           a {
             &::before {
-              @include svgImg-size-pos(-172, -92);
+              @include svgImg-size-pos(-168, -98);
             }
           }
         }
@@ -65,7 +65,7 @@
             display: block;
             width: 145px;
             height: 22px;
-            @include svgImg-size-pos(-4, -122);
+            @include svgImg-size-pos(-3, -124);
           }
         }
       }
@@ -173,7 +173,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            @include mob-svgImg-size-pos(145, -114);
+            @include mob-svgImg-size-pos(143, -123);
           }
         }
       }
@@ -210,7 +210,7 @@
                 display: block;
                 width: 124px;
                 height: 17px;
-                @include mob-svgImg-size-pos(-136, -207);
+                @include mob-svgImg-size-pos(-140, -206);
               }
             }
           }
@@ -228,8 +228,8 @@
                 width: 100%;
                 height: 100%;
                 background: url(../../img/sp_clova.png);
-                background-size: 781px 756px;
-                background-position: -191px 128px;
+                background-size: 795px 754px;
+                background-position: -195px 127px;
               }
             }
           }

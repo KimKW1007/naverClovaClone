@@ -110,32 +110,33 @@
               width: 7px;
               height: 12px;
               margin-left: 8px;
-              @include mob-svgImg-size-pos(76, 118);
+              margin-top: -1px;
+              @include mob-svgImg-size-pos(72, 118);
             }
           }
         }
       }
       .item1{
-        background:#09c75c url(https://static-clova.pstatic.net/static/69898d9/m/img/main/banner_with_cloud_pattern.png) 100% 0 no-repeat;
+        background:#09c75c url(../img/banner_with_cloud_pattern.png) 100% 0 no-repeat;
         background-size: contain;
         
         .item-title{
-          background-position: -4px -116px;
+          background-position: -4px -110px;
           width: 226px;
           height: 33px;
         }
       }
       .item2{
-        background: #1f81f3 url(https://static-clova.pstatic.net/static/69898d9/m/img/main/banner_with_clova_pattern.png) 100% 0 no-repeat;
+        background: #1f81f3 url(../img/banner_with_clova_pattern.png) 100% 0 no-repeat;
         background-size: contain;
         .item-title{
-          background-position: -4px -38px;
+          background-position: -4px -40px;
           width: 243px;
           height: 33px;
         }
       }
       .item3{
-        background: #000 url(https://static-clova.pstatic.net/static/69898d9/m/img/main/banner_apply_pattern.png) 100% 0 no-repeat;
+        background: #000 url(../img/banner_apply_pattern.png) 100% 0 no-repeat;
         background-size: contain;
         .item-title{
           background-position: -4px -154px;
