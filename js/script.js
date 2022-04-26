@@ -81,10 +81,6 @@
             return `<div class="${className}" aria-selected="false" tabindex="0" role="button" aria-label="Go to slide ${index}" aria-current=""><span class="hide">${index}페이지</span></div>`;
           }
         },
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
       });
 
 

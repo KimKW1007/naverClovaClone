@@ -84,7 +84,7 @@
 
 #wrap #header .container .header .mob-menu .nav-header .mob-menu-cl-box .mob-menu-cl-btn { display: block; width: 100%; height: 100%; }
 
-#wrap #header .container .header .mob-menu .nav-header .mob-menu-cl-box .mob-menu-cl-btn::before { content: ''; display: block; width: 100%; height: 100%; background: url(../../img/sp_clova.png); background-size: 795px 754px; background-position: -195px 127px; }
+#wrap #header .container .header .mob-menu .nav-header .mob-menu-cl-box .mob-menu-cl-btn::before { content: ''; display: block; width: 100%; height: 100%; background: url(../img/sp_clova.png); background-size: 795px 754px; background-position: -195px 127px; }
 
 #wrap #header .container .header .mob-menu .mob-menu-list { width: 100%; height: calc(100% - 54px); padding: 0 20px; overflow-y: scroll; }
 
@@ -124,9 +124,9 @@
 
 #wrap #banner .container .slide-view .slide-wrap .slide .bg-img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-filter: brightness(0.8); filter: brightness(0.8); }
 
-#wrap #banner .container .slide-view .slide-wrap .slide .bg-img.bg-img1 { background: url(../../img/main_lamp.png) no-repeat 50% 90%; background-size: cover; }
+#wrap #banner .container .slide-view .slide-wrap .slide .bg-img.bg-img1 { background: url(../img/main_lamp.png) no-repeat 50% 90%; background-size: cover; }
 
-#wrap #banner .container .slide-view .slide-wrap .slide .bg-img.bg-img2 { background: url(../../img/main_clock_plus.png) no-repeat 50% 90%; background-size: cover; }
+#wrap #banner .container .slide-view .slide-wrap .slide .bg-img.bg-img2 { background: url(../img/main_clock_plus.png) no-repeat 50% 90%; background-size: cover; }
 
 #wrap #banner .container .slide-view .slide-wrap .slide .mob-bg-img { display: none; position: absolute; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; -webkit-filter: brightness(0.8); filter: brightness(0.8); }
 
